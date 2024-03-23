@@ -1,0 +1,12 @@
+psycopg2==2.9.9
+psycopg2-binary==2.9.9
+flask_sqlalchemy==3.1.1
+flask>=2.2.5
+sqlalchemy>=2.0.16
+Werkzeug>=2.2.2
+Jinja2>=3.0
+itsdangerous>=2.0
+click>=8.0
+typing-extensions>=4.6.0
+greenlet!=0.4.17
+MarkupSafe>=2.0
