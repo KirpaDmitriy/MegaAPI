@@ -1,1 +1,5 @@
-# MegaAPI
+# Кино API
+Для запуска выполнить `python -m flask --app main run`. Также необходимо создать базу PG с названием postgre с помощью Docker Desktop.
+
+## Описание
+Успел реализовать все обработчики, как сущностей фильмов, так и сущностей режиссёров. В файле [app.py](https://github.com/KirpaDmitriy/MegaAPI/blob/main/app.py) находится приложение для Flask, которое затем переиспользуется в обработчиках запросов и методах работы с базой. Обработчики запросов лежат в файле [main.py](https://github.com/KirpaDmitriy/MegaAPI/blob/main/main.py), в который в виде зависимости попадает приложение из [app.py](https://github.com/KirpaDmitriy/MegaAPI/blob/main/app.py) и методы для работы с базой из модуля [storage](https://github.com/KirpaDmitriy/MegaAPI/tree/main/storage). Модуль [storage](https://github.com/KirpaDmitriy/MegaAPI/tree/main/storage) отвечает за работу с хранилищем (в данном случае - с базой данных PG). В нём определены [схемы таблиц и методы работы с ними](https://github.com/KirpaDmitriy/MegaAPI/blob/main/storage/__init__.py), а также ["самописные" исключения](https://github.com/KirpaDmitriy/MegaAPI/blob/main/storage/exceptions.py).
